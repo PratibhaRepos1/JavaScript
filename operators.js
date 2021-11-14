@@ -66,3 +66,16 @@ console.log('Eligible ' + eligibleForLoan);
 let applicationRefused = !eligibleForLoan;
 console.log('Application Refused ', applicationRefused);
 
+//Logical Operators with non Boolean
+
+let usercolor = undefined;
+let defaultcolor = 'blue';
+
+let currentcolor = usercolor || defaultcolor;
+
+console.log(currentcolor);
+
+let h = 10; 
+
+let j = h++; 
+console.log(j);
