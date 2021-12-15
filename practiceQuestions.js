@@ -38,3 +38,42 @@ if(Object.prototype.toString.call(arrayList) === '[object Array]')
 else
     console.log('Not an array!')
 
+//q.4 How to empty an array in JavaScript
+
+//method 1
+var myarr = ['a','b', 'c'];
+//myarr = [];
+//console.log(myarr);
+
+//method 2 -- set length to 0
+//if you have referenced this array from another variable, 
+//then the original reference array will remain unchanged
+var myarr = ['a','b', 'c'];
+myreferencearr = myarr;
+// myarr = []; // this will not work here as we have reference aaray as well
+myarr.length = 0;
+console.log(myarr);
+console.log(myreferencearr);
+
+//Method 3
+var arrayList = [{is:1},'ab'];
+arrayList.splice(0, arrayList.length);
+console.log(arrayList);
+
+//q.5 what is splice() method in array
+/* the splice() method changes the contents of an array by removing or 
+replacing existing elements and/or adding new elements in place. To access part of an array without modifying it */
+const months = ['Jan', 'feb','Mar','May'];
+//1 use - add element to array
+months.splice(3,0,'Apr');
+console.log(months);
+
+//Q6: How would you check if a number is an integer?
+function isInt(num){
+    return num % 1 === 0;
+}
+console.log(isInt(4)); // true
+console.log(isInt(12.2)); // false
+console.log(isInt(0.3)); // false
+
+
