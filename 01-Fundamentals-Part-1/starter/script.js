@@ -18,4 +18,39 @@ let myCurrentJob = "IT service";
 let javaScriptIsFun = true;
 console.log(javaScriptIsFun);
 
+//typeof
+console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+console.log(typeof 24);
+console.log(typeof 'Bangkok');
+
+//undefined type
+let year;
+console.log(year);
+console.log(typeof year);
+
+//effect of dynamic typing
+year = 2022;
+console.log(year);
+console.log(typeof year);
+
+//lession 13. let, var and const
+
+//var - global and function scoped
+
+var num = 10;
+function f() {
+    console.log(num);
+}
+f();
+console.log('num is ' + num);
+
+//let 
+let a = 9;
+if (true) {
+    let a = 10;
+    console.log(a);
+}
+console.log(a);
+
 

@@ -11,3 +11,10 @@ let population = '83.24 million';
 console.log(country);
 console.log(continent);
 console.log(population);
+let isIsland = true;
+
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+let language = 'german';
+console.log(typeof language);
