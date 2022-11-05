@@ -29,3 +29,26 @@ console.log(country);
 console.log(continent);
 console.log(population);
 console.log(populationInBillion);
+let isJavascriptFun = true;
+let year;
+//typeof operator
+console.log(typeof country);
+console.log(typeof true);
+console.log(typeof PI);
+console.log(typeof isJavascriptFun);
+console.log(year);
+console.log(typeof year);
+
+console.log(typeof null);
+
+//let var and const
+let age = 30;
+age = 32;
+
+//const values can't be changed.
+const birthYear = 1990;
+//birthYear = 2012;
+console.log(birthYear);
+
+newEventParty = 'Halloween'; 
+console.log(newEventParty); // here newEventParty is the global varibles so don't use varibles like way always try to use const, let or var (var is older way)
