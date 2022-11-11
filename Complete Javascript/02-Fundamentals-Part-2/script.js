@@ -25,3 +25,24 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(5, 1));
+
+const appleOrrangeJuice = fruitProcessor(4,2);
+console.log(appleOrrangeJuice);
+
+//function Declarations Vs. Expressions
+
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calcAge1(2002);
+console.log(age1);
+
+//expresstions
+//console.log(calAge2(1991)); // Uncaught ReferenceError: Cannot access 'calAge2' before initialization
+//anonymous function
+const calAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+console.log(calAge2(1991));
+
