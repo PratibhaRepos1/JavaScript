@@ -38,11 +38,30 @@ function calcAge1(birthYear) {
 const age1 = calcAge1(2002);
 console.log(age1);
 
-//expresstions
+//expressions
 //console.log(calAge2(1991)); // Uncaught ReferenceError: Cannot access 'calAge2' before initialization
-//anonymous function
+
+//expressions or anonymous function
 const calAge2 = function (birthYear) {
     return 2037 - birthYear;
 }
 console.log(calAge2(1991));
 
+//Arrow function
+
+const calAge3 = birthYear => 2037 - birthYear;
+//console.log(calAge3(2002));
+const age3 = calAge3(2002);
+
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstname) => {
+    const age = 2037 - birthYear;
+    const retirment = 65 - age;
+    //return retirment;
+
+    return `${firstname} retires in ${retirment} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1981, 'Bob'));
