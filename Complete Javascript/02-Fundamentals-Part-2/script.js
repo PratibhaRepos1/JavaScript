@@ -17,14 +17,21 @@ function logger () {
 logger();
 logger();
 
+const cutPieces = function (fruit) {
+    return fruit * 4;
+}
+ 
 function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+    const applePieces = cutPieces(apples);
+    const orangePieces = cutPieces(oranges);
+
+    //console.log(apples, oranges);
+    const juice = `Juice with ${applePieces} apple pieces of apples and ${orangePieces} orange pieces of oranges.`;
 
     return juice;
 }
 
-console.log(fruitProcessor(5, 1));
+console.log(fruitProcessor(2, 1));
 
 const appleOrrangeJuice = fruitProcessor(4,2);
 console.log(appleOrrangeJuice);
