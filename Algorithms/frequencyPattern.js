@@ -14,6 +14,7 @@ function same(array1, array2) {
         if(correctIndex === -1) {
             return false;
         }
+        console.log(array2);
         array2.splice(correctIndex, 1);
 
     }
@@ -21,7 +22,7 @@ function same(array1, array2) {
 
 }
 
-const arr1 = [1, 2, 3];
-const arr2 = [1, 4, 9];
+const arr1 = [5, 1, 2, 1, 3];
+const arr2 = [1, 4, 9, 25, 1];
 
 console.log(same(arr1, arr2));
