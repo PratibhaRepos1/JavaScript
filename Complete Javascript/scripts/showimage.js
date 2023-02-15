@@ -20,6 +20,7 @@ myButton.onclick = () => {
 
 function setUsername() {
   const userName = prompt("Please enter your name.");
+  
   userName === null ? userName = 'Guest' : localStorage.setItem("name", userName);
 
   myHeading2.textContent = `Chrome is cool ${userName}... Let's try to click on Image!`;
