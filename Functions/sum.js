@@ -1,10 +1,10 @@
 /* write a function to add two numbers */
 
-function addTwoNums() {
-    var a = 10;
-    var b = 20;
+function addTwoNums(a, b) {
+    
     var c = a + b;
     console.log(c);
 }
 
-addTwoNums();
+addTwoNums(2, 4);
+addTwoNums(10, 40);
