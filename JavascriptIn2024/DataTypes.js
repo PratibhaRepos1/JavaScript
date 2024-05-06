@@ -32,3 +32,15 @@ const birthYear = 1991;
 //best practice to use const if its never changing and if varible change then use let
 // best practice rule 1. always use const
 
+// let is blocked scoped
+// var is function scoped
+
+var job = 'programmer';
+job = 'manager';
+
+lastName = 'Robison'; 
+console.log(lastName);
+console.log(typeof lastName);
+
+
+
