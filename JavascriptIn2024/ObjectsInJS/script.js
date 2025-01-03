@@ -101,3 +101,16 @@ const copy1 = Object.assign({}, cp_contract_AAL_FE);
 copy1.pageChanged.oldPage = "myPolicy"; 
 
 console.log(cp_contract_AAL_FE.pageChanged.oldPage); // myPolicy
+console.log(car)
+if(!car.engine) {
+    car.engine = {oldModel: 'as123', 'newModel': 'ps123'}
+}
+console.log(car);
+
+let x = 0;
+if(!!x) {
+    console.log("Truthy");
+} else {
+    console.log("Falsy");
+}
+console.log(x)
